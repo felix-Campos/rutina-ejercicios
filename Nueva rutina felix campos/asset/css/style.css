@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fe8429;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.logo-container {
+    animation: fadeInOut 3s infinite alternate;
+    
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    max-width: 100px;
+    border-radius: 50px;
+}
+
+nav {
+    background-image: url(https://play-lh.googleusercontent.com/7carf1cfv7uxZJGfy9g13Tl3zSbG64qoeRnUrUWiAcUzyoj0Zp3zF_fs1j4S8ylmZZc);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* Centrar la imagen en el eje y */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.3em;
+        flex-grow: 3;
+}
+
+.nav-button {
+    background-color: #e2e2e2;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 3px solid black;
+    width: 140px;
+   
+   
+}
+
+main {
+    padding: 1.5em;
+}
+
+footer {
+    background-color:#fe7100;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para pantallas más pequeñas (responsive) */
+@media only screen and (max-width: 700px) {
+    header {
+        padding: 1rem;
+        /* Reducir el padding en pantallas más pequeñas */
+    }
+
+    .logo {
+        max-width: 80px;
+        /* Ajustar el tamaño del logo en pantallas más pequeñas */
+    }
+
+    nav {
+        flex-direction: column;
+        /* Apilar los botones verticalmente en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .nav-button {
+        margin: 5px 0;
+        /* Agregar espacio entre los botones en pantallas más pequeñas */
+    }
+}
